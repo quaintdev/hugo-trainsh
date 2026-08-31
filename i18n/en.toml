@@ -101,7 +101,7 @@ other = "Remove all filters"
 other = "Remove tag"
 
 [home_most_recent_posts]
-other = "Recent posts"
+other = "From the blog"
 
 [pagination_previous]
 other = "Previous"

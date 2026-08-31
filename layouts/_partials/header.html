@@ -5,7 +5,7 @@
     {{- $tagsLabel = i18n "tag_archive" -}}
   {{- end -}}
   <div class="site-brand">
-    <a class="title" href="{{ "/" | relLangURL }}">
+    <a class="title" href="{{ site.Home.RelPermalink }}">
       <h1>{{ .Site.Title }}</h1>
     </a>
     <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
@@ -60,7 +60,7 @@
     <a href="{{ $tagsPage.RelPermalink }}">{{ $tagsLabel }}</a>
     {{- end -}}
     {{ else }}
-    <a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+    <a href="{{ site.Home.RelPermalink }}">{{ i18n "home" }}</a>
     {{ with site.GetPage "/blog" }}
     <a href="{{ .RelPermalink }}">{{ i18n "blog" }}</a>
     {{ end }}
